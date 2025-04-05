@@ -12,11 +12,12 @@ CREATE TABLE Categories (
 CREATE TABLE Products (
     product_id INT PRIMARY KEY IDENTITY(1,1),  -- Ürünün benzersiz ID'si, otomatik artan
     product_name VARCHAR(255) NOT NULL,  -- Ürünün adı, boş geçilemez
+	description VARCHAR(MAX),
     category_id INT,  -- Kategorinin ID'si (yabancı anahtar)
     price DECIMAL(10, 2) NOT NULL,  -- Ürünün fiyatı, ondalıklı, boş geçilemez
     stock_quantity INT NOT NULL,  -- Ürünün mevcut stok miktarı
-    FOREIGN KEY (category_id) REFERENCES Categories(category_id)  -- Kategoriler tablosuyla ilişkilendirildi
-);
+    FOREIGN KEY (category_id) REFERENCES Categories(category_id)  -- Kategoriler tablosuyla ilişkilendirilmiş
+); 
 
 -- Müşteriler tablosunu oluştur
 CREATE TABLE Customers (
