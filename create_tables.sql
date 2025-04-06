@@ -26,7 +26,7 @@ CREATE TABLE Customers (
     last_name VARCHAR(255) NOT NULL,  -- Müşterinin soyadı, boş geçilemez
     email VARCHAR(255) UNIQUE NOT NULL,  -- Müşterinin e-posta adresi, benzersiz olmalı ve boş geçilemez
     phone VARCHAR(20),  -- Müşterinin telefon numarası
-    addresss TEXT  -- Müşterinin adres bilgisi
+    address TEXT  -- Müşterinin adres bilgisi
 );
 
 -- Siparişler tablosunu oluştur
