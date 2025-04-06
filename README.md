@@ -21,3 +21,16 @@ Bu repoda şu dosyalar bulunmaktadır:
 ```sql
 -- Veritabanını oluşturur
 CREATE DATABASE ecommerce_db;
+
+### 2. Tabloları Oluşturma
+
+Veritabanını oluşturduktan sonra, gerekli tabloları `create_tables.sql dosyasını` çalıştırarak oluşturabilirsiniz:
+
+```sql
+-- Ürünler, müşteriler, siparişler ve ödeme bilgileri gibi tabloları oluşturur
+CREATE TABLE Products (...);
+CREATE TABLE Customers (...);
+CREATE TABLE Orders (...);
+CREATE TABLE Payments (...);
+CREATE TABLE Order_Details (...);
+
