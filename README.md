@@ -11,3 +11,13 @@ Bu repoda şu dosyalar bulunmaktadır:
 - **`insert_data.sql`**: Örnek verilerle tabloyu doldurur.
 - **`queries.sql`**: Örnek SQL sorguları içerir.
 
+
+## Kurulum
+
+### 1. Veritabanını Oluşturma
+
+İlk adım olarak veritabanını oluşturmanız gerekir. Bunun için `create_database.sql` dosyasını çalıştırın:
+
+```sql
+-- Veritabanını oluşturur
+CREATE DATABASE ecommerce_db;
